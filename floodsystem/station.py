@@ -53,6 +53,6 @@ class MonitoringStation:
 def inconsistent_typical_range_stations(stations):
     inconStat = []
     for stat in stations:
-        if not stat.typical_range_consistent:
+        if stat.typical_range_consistent == False:
             inconStat.append(stat)
     return inconStat
