@@ -2,10 +2,12 @@ from floodsystem.geo import rivers_with_station
 from floodsystem.geo import stations_by_river
 from floodsystem.stationdata import build_station_list
 
+# Build list of stations and rivers
 stations = build_station_list()
 rivers = rivers_with_station(stations)
 print(len(rivers), "stations.", "First 10 -", rivers[:10], "\n")
 
+# Sort stations names by three different rivers and print
 stats_by_river = stations_by_river(stations)
 stats1 = stats_by_river['River Aire']
 for i in range(len(stats1)):
