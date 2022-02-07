@@ -93,21 +93,6 @@ def test_stations_by_river():
 def test_rivers_by_station_number():
     """Check that the outputs of rivers_by_station_number are of the correct type"""
     stations = build_station_list()
-
-    # Obtain output
-    X = rivers_by_station_number(stations, N)
-
-    # Check the type of the output
-    assert type(X) == list
-
-    # Check that the list is in alphabetical order
-    for n in range(0, len(X) - 1):
-        assert X[n + 1][1] >= X[n][1]
-
-    # Check that the list is of length N or greater
-    assert len(X) >= N
-
-    stations = build_station_list()
     # Obtain output
     N = random.randint(1, 1000)
     X = rivers_by_station_number(stations, N)
