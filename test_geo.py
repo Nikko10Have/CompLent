@@ -4,7 +4,7 @@ from floodsystem.geo import *
 from floodsystem.stationdata import build_station_list
 import random
 
-# TASK 1B: Check that the outputs are of the correct type and value
+# TASK 1B:
 
 
 def test_stations_by_distance():
@@ -28,7 +28,7 @@ def test_stations_by_distance():
     for n in range(0, len(X) - 1):
         assert X[n + 1][1] >= X[n][1]
 
-# TASK 1C: Check that the outputs are of the correct type and are ordered properly
+# TASK 1C:
 
 
 def test_stations_within_radius():
@@ -52,7 +52,7 @@ def test_stations_within_radius():
     for n in range(0, len(X) - 1):
         assert X[n + 1] >= X[n]
 
-# TASK 1D: Check that the outputs are of the correct type and are ordered properly
+# TASK 1D:
 
 
 def test_rivers_with_station():
@@ -86,7 +86,7 @@ def test_stations_by_river():
     # River Cam is in Cambridge
     assert "Cambridge" in X["River Cam"]
 
-# TASK 1E: Check that the outputs are of the correct type and are ordered properly
+# TASK 1E:
 
 
 def test_rivers_by_station_number():
