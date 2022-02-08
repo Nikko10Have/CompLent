@@ -57,6 +57,6 @@ def inconsistent_typical_range_stations(stations):
     # Build list of stations that are inconsistent
     inconStat = []
     for stat in stations:
-        if stat.typical_range_consistent == False:
+        if stat.typical_range_consistent() == False:
             inconStat.append(stat)
     return inconStat
